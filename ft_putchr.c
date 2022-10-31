@@ -6,8 +6,13 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:56:02 by mkaraden          #+#    #+#             */
-/*   Updated: 2022/10/31 14:56:16 by mkaraden         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:01:32 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.c"
+
+int	ft_putchr(int c)
+{
+	return (write(1, &c, 1));
+}
