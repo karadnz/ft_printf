@@ -6,7 +6,7 @@
 #    By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/31 14:12:43 by mkaraden          #+#    #+#              #
-#    Updated: 2022/10/31 14:13:06 by mkaraden         ###   ########.fr        #
+#    Updated: 2022/10/31 15:15:36 by mkaraden         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRCS = ft_putchr.c		\
 	   ft_putnbruhex.c	\
 	   ft_putptr.c		\
 	   ft_putstr.c		\
-	   ft_specifer.c	
+	   ft_specifier.c
 
 OBJS= $(SRCS:.c=.o)
 

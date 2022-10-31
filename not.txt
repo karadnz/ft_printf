@@ -1,0 +1,5 @@
+%d vs %i:
+https://www.geeksforgeeks.org/difference-d-format-specifier-c-language/#:~:text=%25d%20specifies%20signed%20decimal%20integer%20while%20%25i%20specifies%20integer.&text=There%20is%20no%20difference%20between,d%20format%20specifiers%20for%20printf.
+
+heps
+ft_putchr.c ft_printf.c ft_putnbr.c ft_putnbru.c ft_putnbruhex.c ft_putptr.c ft_putstr.c ft_specifer.c

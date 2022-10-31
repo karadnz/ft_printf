@@ -6,8 +6,8 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:57:20 by mkaraden          #+#    #+#             */
-/*   Updated: 2022/10/31 14:57:22 by mkaraden         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:16:15 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.c"
+#include "libftprintf.h"

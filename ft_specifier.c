@@ -6,7 +6,7 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:42:43 by mkaraden          #+#    #+#             */
-/*   Updated: 2022/10/31 14:56:20 by mkaraden         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:33:41 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,37 +18,42 @@ int ft_specifer(va_list args, const char format)
     int rt;
 
     rt = 0;
-    if (format == 'c')
+    if (format == 'c') //char
     {
-        write(1, &va_arg(args, char), 1);
+        return(ft_putchr(va_arg(args, int)));
     }
-    else if (format == 's')
+    else if (format == 's') //string
     {
-        ft_putstr(va_arg(args, char *));
+        return(ft_putstr(va_arg(args, char *)));
     }
-    else if (format == 'p')
+    else if (format == 'p') //void * in hexadecimal
     {
-        write(1, &va_arg(args, char), 1);
+        //return(ft_putptr(va_arg(args, unsigned long long int)));
+        return (0);
     }
-    else if (format == 'd')
+    else if (format == 'd') // decimal
     {
-        write(1, &va_arg(args, char), 1);
+        return(ft_putnbr(va_arg(args, int)));
     }
-    else if (format == 'i')
+    else if (format == 'i') //integer in base 10
     {
-        write(1, &va_arg(args, char), 1);
+        return(ft_putnbr(va_arg(args, int)));
     }
-    else if (format == 'u')
+    else if (format == 'u') //unsigned decimal 
     {
-        write(1, &va_arg(args, char), 1);
+        return(ft_putchr(va_arg(args, int)));
     }
-    else if (format == 'x')
+    else if (format == 'x') //hex in lowercase
     {
-        write(1, &va_arg(args, char), 1);
+        return(ft_putchr(va_arg(args, int)));
     }
-    else if (format == 'X')
+    else if (format == 'X') //hex in uppercase
     {
-        write(1, &va_arg(args, char), 1);
+        return(ft_putchr(va_arg(args, int)));
+    }
+    else if (format == '%') //percent sign
+    {
+        return(ft_putchr(va_arg(args, int)));
     }
 
     return (rt);

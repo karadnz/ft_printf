@@ -6,11 +6,11 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:56:02 by mkaraden          #+#    #+#             */
-/*   Updated: 2022/10/31 15:01:32 by mkaraden         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:16:27 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.c"
+#include "libftprintf.h"
 
 int	ft_putchr(int c)
 {
