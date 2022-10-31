@@ -6,54 +6,31 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:56:38 by mkaraden          #+#    #+#             */
-/*   Updated: 2022/10/31 15:27:47 by mkaraden         ###   ########.fr       */
+/*   Updated: 2022/10/31 15:52:52 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-void	*ft_bzero(void *b, size_t len)
+int	ft_putnbr(int nbr)
 {
-	unsigned char	*str;
-	size_t			i;
+	char	ch;
+	int		rt;
 
-	i = 0;
-	str = (unsigned char *) b;
-	while (i < len)
+	rt = 0;
+	if (nbr == -2147483648)
+		rt += (write(1, "-2147483648", 11));
+	else
 	{
-		str[i] = '\0';
-		i++;
+		if (nbr < 0)
+		{
+			rt += write (1, "-", 1);
+			nbr *= -1;
+		}
+		if (nbr > 9)
+			rt += ft_putnbr(nbr / 10);
+		ch = 48 + (nbr % 10);
+		rt += write(1, &ch, 1);
 	}
-	return (b);
-}
-static int	ft_abs(int n)
-{
-	if (n < 0)
-		n = -n;
-	return (n);
-}
-
-int	ft_putnbr(int num)
-{
-	char	str[13];
-	int		is_neg;
-	int		len;
-
-	is_neg = (num < 0);
-	ft_bzero(str, 13);
-	if (num == 0)
-		str[0] = '0';
-	len = 0;
-	while (num != 0)
-	{
-		str[len++] = '0' + ft_abs(num % 10);
-		num = (num / 10);
-	}
-	if (is_neg)
-		str[len] = '-';
-	else if (len > 0)
-		len--;
-	while (len >= 0)
-		write(1, &str[len--], 1);
-    return(0);
+	return (rt);
 }
