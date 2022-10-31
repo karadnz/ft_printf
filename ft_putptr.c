@@ -6,11 +6,11 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:57:36 by mkaraden          #+#    #+#             */
-/*   Updated: 2022/10/31 16:02:42 by mkaraden         ###   ########.fr       */
+/*   Updated: 2022/10/31 16:09:51 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putptr(unsigned long long int ptr, int flag)
 {

@@ -6,11 +6,11 @@
 /*   By: mkaraden <mkaraden@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:56:38 by mkaraden          #+#    #+#             */
-/*   Updated: 2022/10/31 15:52:52 by mkaraden         ###   ########.fr       */
+/*   Updated: 2022/10/31 16:09:53 by mkaraden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int nbr)
 {
